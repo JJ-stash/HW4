@@ -44,6 +44,19 @@ class MainActivity : AppCompatActivity() {
             resultText.text = ""
         }
     }
+
+    public fun dotClick(view: View){
+        if(view is Button){
+            resultText.append(".")
+        }
+    }
+
+    public fun clearClick(view: View){
+        if(view is Button){
+            resultText.text = ""
+        }
+    }
+
     public fun equalsClick(view: View){
         val secondNumber = resultText.text.toString().toDouble()
         val k = when(operation){
@@ -54,11 +67,5 @@ class MainActivity : AppCompatActivity() {
             else -> {0}
         }
         resultText.text = k.toString()
-    }
-
-    public fun clearClick(view: View){
-        if(view is Button){
-            resultText.text = ""
-        }
     }
 }

@@ -185,6 +185,7 @@
                 android:id="@+id/btnNull">
             </Button>
             <Button
+                android:onClick="dotClick"
                 android:text="."
                 android:textSize="50dp"
                 android:backgroundTint="@color/purple"
