@@ -58,6 +58,7 @@ class MainActivity : AppCompatActivity() {
 
     public fun clearClick(view: View){
         if(view is Button){
+            resultText.text = ""
         }
     }
 }
